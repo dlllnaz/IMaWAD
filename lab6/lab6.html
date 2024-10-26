@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="lab6.css">
+</head>
+<body>
+    <div class="music-player">
+        <img id="track-cover" src="" alt="Track Cover" class="cover">
+        <div class="controls">
+            <button id="play-pause-btn" class="btn">Play</button>
+            <button id="next-btn" class="btn">Next</button>
+        </div>
+        <ul id="track-list" class="track-list"></ul>
+        <div id="track-info" class="track-info"></div>
+        
+        <!-- Ползунок громкости -->
+        <div class="volume-control">
+            <label for="volume-control">Volume:</label>
+            <input type="range" id="volume-control" min="0" max="1" step="0.1" value="1">
+        </div>
+    </div>
+
+    <audio id="audio-player" src=""></audio>
+
+    <script src="lab6.js"></script>
+</body>
+</html>
